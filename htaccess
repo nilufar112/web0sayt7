@@ -1,0 +1,26 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page73892741.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^boshmenu$ page73892741.html [NC]
+RewriteRule ^boshmenu/$ page73892741.html [NC]
+
+RewriteRule ^xizmatlar$ page73892847.html [NC]
+RewriteRule ^xizmatlar/$ page73892847.html [NC]
+
+RewriteRule ^portfolliyo$ page73892915.html [NC]
+RewriteRule ^portfolliyo/$ page73892915.html [NC]
+
+RewriteRule ^naxt$ page73892991.html [NC]
+RewriteRule ^naxt/$ page73892991.html [NC]
+
+RewriteRule ^ruski$ page73893143.html [NC]
+RewriteRule ^ruski/$ page73893143.html [NC]
+
+
